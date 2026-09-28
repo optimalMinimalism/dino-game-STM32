@@ -7,6 +7,8 @@
 ├── scripts/
 │   └── mbedPythonCompat.py         <-- Python 3.10+ compatibility script
 └── src/
+    ├── gameAssets.h                <-- Header Sprite, Font 5x7 e Stringhe
+    ├── gameAssets.cpp              <-- Storage in Flash per Sprite, Teschio, Scritte
     ├── main.cpp                    <-- Main entry point & thread initializations
     ├── ssd1306.h                   <-- SSD1306 display driver header
     ├── ssd1306.cpp                 <-- SSD1306 display driver & Skull and Bones 
