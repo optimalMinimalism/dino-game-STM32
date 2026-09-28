@@ -4,11 +4,13 @@
             "target.macros_add": [
                 "ELIOT_BOARD"
             ],
-            "target.clock_source": "USE_PLL_HSE_EXTC",
+            "target.clock_source": "USE_PLL_HSI",
             "target.console-baud-rate": 115200,
             "platform.stdio-baud-rate": 115200,
             "platform.stdio-buffered-serial": true,
-            "platform.stdio-flush-at-exit": true
+            "platform.stdio-flush-at-exit": true,
+            "target.console-uart-tx": "CONSOLE_ITM",
+            "target.console-uart-rx": "NC"
         },
         "*": {
             "target.components_add": ["OLED"],

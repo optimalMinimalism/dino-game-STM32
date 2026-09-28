@@ -1,4 +1,5 @@
 #include "ssd1306.h"
+#include "gameEngine.h"
 #include <cstring>
 #include <cstdio>
 
@@ -34,7 +35,7 @@ void Ssd1306::init() {
     sendCommand(0xD3); sendCommand(0x00); // Display Offset 0
     sendCommand(0x40);                     // Start Line 0
     sendCommand(0x8D); sendCommand(0x14); // Enable Charge Pump (3.3V supply)
-    sendCommand(0x20); sendCommand(0x00); // Horizontal Addressing Mode
+    sendCommand(0x20); sendCommand(0x02); // Page Addressing Mode (used by updateDisplay)
     sendCommand(0xA1);                     // Segment Re-map (flip orizzontale)
     sendCommand(0xC8);                     // COM Scan Direction (flip verticale)
     sendCommand(0xDA); sendCommand(0x12); // Pin Configuration

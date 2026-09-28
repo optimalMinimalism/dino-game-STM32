@@ -1,0 +1,16 @@
+{
+  "ELIOT_CORE": {
+    "inherits": [
+      "NUCLEO_F411RE"
+    ],
+    "device_has_add": [
+      "USBDEVICE"
+    ],
+    "config": {
+      "usb_speed": {
+        "help": "STM32F411 native USB full speed on J2",
+        "value": "USE_USB_OTG_FS"
+      }
+    }
+  }
+}
