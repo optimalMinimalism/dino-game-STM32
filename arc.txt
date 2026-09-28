@@ -1,0 +1,20 @@
++------------------------------------+
+       |              main.cpp              |
+       |  - Gestione Thread Mbed OS         |
+       |  - Interrupt Tasto PC_13 (J21)     |
+       +-----------------+------------------+
+                         |
+                         v
+       +------------------------------------+
+       |          game_engine.cpp           |
+       |  - Logica Dino / Fisica            |
+       |  - Bounding Box Collision          |
+       |  - Buffer di Frame (RAM)           |
+       +-----------------+------------------+
+                         |
+                         v
+       +------------------------------------+
+       |            ssd1306.cpp             |
+       |  - Driver HAL I2C3 (PA_8 / PC_9)   |
+       |  - Scrittura registro / Pagine     |
+       +------------------------------------+

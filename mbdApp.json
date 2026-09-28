@@ -1,0 +1,24 @@
+{
+    "target_overrides": {
+        "NUCLEO_F411RE": {
+            "target.macros_add": [
+                "ELIOT_BOARD"
+            ],
+            "target.clock_source": "USE_PLL_HSE_EXTC",
+            "target.console-baud-rate": 115200,
+            "platform.stdio-baud-rate": 115200,
+            "platform.stdio-buffered-serial": true,
+            "platform.stdio-flush-at-exit": true
+        },
+        "*": {
+            "target.components_add": ["OLED"],
+            "platform.callback-nontrivial": true
+        }
+    },
+    "config": {
+        "gameFps": {
+            "help": "Target refresh rate for the game loop",
+            "value": 20
+        }
+    }
+}
